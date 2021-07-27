@@ -1,8 +1,8 @@
-import Element from '../Element'
+// import Element from './index';
 
-class Text extends Element{
+class Text {
     constructor(){
-        super();
+        // super();
     }
 }
 
