@@ -9,7 +9,7 @@ class Image extends Element{
 
     createContext() {
         const { src } = this.elementJson;
-        this.slide.addImage({path: src, x: '', y: '', w: '', h: ''});
+        this.slide.addImage({path: src, x: this.X, y: this.Y, w: this.W, h: this.H});
     }
 }
 

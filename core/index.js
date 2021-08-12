@@ -17,9 +17,10 @@ export default class Render {
 
     setLayout() {
         const { size } = this.data.size;
-        const pageLayout = LAYOUT[size];
+        const {name: pageLayout, value: pptSize} = LAYOUT[size];
         this.pres.layout = pageLayout;
-        this.store.setProperty('layout', pageLayout);
+        this.store.setProperty('size', this.data.size);
+        this.store.setProperty('pptSize', pptSize);
     }
 
     renderPage() {
